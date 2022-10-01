@@ -1,0 +1,75 @@
+<Main>
+    BoxLayout:
+        orientation: 'vertical'
+        size: root.width, root.height
+        padding: [0,0,0,20]
+        spacing: 10
+        canvas:
+            Color:
+                rgba: 1,1,1,1
+            Rectangle:
+                size: root.width, root.height
+                pos: 0,0
+        Image:
+            source:'img/saude.png'
+            size_hint_y: None
+            height: 200
+            allow_stretch: True
+        TextInput:
+            id: nome
+            text:'Nome'
+            miltiline: False
+            pos_hint: {'center_x':0.5}
+            size_hint: (None, None)
+            height: 37
+            width: root.width/2
+            font_size: 20
+        TextInput:
+            id: altura
+            text:'Altura'
+            pos_hint: {'center_x':0.5}
+            miltiline: False
+            size_hint: (None, None)
+            height: 37
+            width: root.width/2
+            font_size: 20
+        TextInput:
+            id: peso
+            text:'Peso'
+            pos_hint: {'center_x':0.5}
+            miltiline: False
+            size_hint: (None, None)
+            height: 37
+            width: root.width/2
+            font_size: 20
+        TextInput:
+            id: idade
+            text:'Idade'
+            pos_hint: {'center_x':0.5}
+            miltiline: False
+            size_hint: (None, None)
+            height: 37
+            width: root.width/2
+            font_size: 20
+        TextInput:
+            id: gordura
+            text:'Percentual de Gordura'
+            pos_hint: {'center_x':0.5}
+            miltiline: False
+            size_hint: (None, None)
+            height: 37
+            width: root.width/2
+            font_size: 20
+        Button:
+            text: "Verificar"
+            size_hint: (1, 0.3)
+            font_size: 32
+            pos_hint: {'center_x':0.5}
+            size_hint: (None, None)
+            height: 60
+            width: 150
+            background_color: (00/255,00/255,100/255,1)
+            background_normal: ''
+            on_press: print('Ruim')
+            
+            
